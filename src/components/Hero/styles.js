@@ -16,16 +16,21 @@ export const Hero = styled.section`
 `;
 
 export const HeroTitle = styled.h1`
-  color: #fff;
-  font-size: 12rem;
+  font-size: 7rem;
   margin-top: 0px;
+  background-image: linear-gradient(to bottom, #ff4040 20%, #0467FB 80%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 
   @media (max-width: 960px) {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 7rem;
+    font-size: 4rem;
   }
 `;
 
