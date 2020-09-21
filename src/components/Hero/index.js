@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../Button';
 import * as S from './styles';
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
         <S.HeroTitle>Know Angola</S.HeroTitle>
         <S.HeroText>Plan your next trip today</S.HeroText>
         <S.HeroBtnContainer>
-          <S.HeroButton>Get started</S.HeroButton>
+          <Button>Get started</Button>
         </S.HeroBtnContainer>
       </S.Hero>
     </>
