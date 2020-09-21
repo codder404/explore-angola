@@ -1,42 +1,42 @@
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { DiScala } from 'react-icons/di';
+import { Link } from "gatsby"
+import { DiScala } from "react-icons/di"
+import styled from "styled-components"
 
-export const Footer = styled.footer`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+export const FooterContainer = styled.footer`
   background-color: #101522;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const SocialMidia = styled.section`
+export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
 `;
 
 export const SocialMediaWrap = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
 
-  @media (max-width: 820px) {
+  @media screen and (max-width: 820px) {
     flex-direction: column;
   }
 `;
 
 export const SocialLogo = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-self: flex-start;
   color: #fff;
+  justify-self: start;
+  cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  margin-bottom: 1rem;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 `;
 
 export const SocialIcon = styled(DiScala)`
@@ -51,12 +51,12 @@ export const WebsiteRights = styled.small`
 
 export const SocialIcons = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 240px;
 `;
 
-export const SocialLink = styled.a`
+export const SocialIconLink = styled.a`
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 24px;
 `;
