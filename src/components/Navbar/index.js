@@ -4,9 +4,11 @@ import { IconContext } from 'react-icons/lib';
 
 import * as S from './styles';
 
-const Navbar = () => {
-  const [click, setClick] = useState(false);
+const Navbar = ({ active, click }) => {
+  const [clicked, setClicked] = useState(false);
   const [scroll, setScroll] = useState(false);
+
+  const handleClick = () => setClicked(!clicked);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -30,6 +32,9 @@ const Navbar = () => {
               <S.NavbarIcon />
               Explore Angola
             </S.NavbarLogo>
+            <S.NavbarMobileIcon onClick={handleClick}>
+              {clicked ? <FaTimes /> : <FaBars />}
+            </S.NavbarMobileIcon>
           </S.NavbarContainer>
         </S.Navbar>
       </IconContext.Provider>
