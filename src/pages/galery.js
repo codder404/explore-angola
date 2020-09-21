@@ -3,11 +3,11 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
+const Galery = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hello world!</h1>
+    <SEO title="Galeria de fotos" />
+    <h1>Galeria de fotos</h1>
   </Layout>
 )
 
-export default IndexPage;
+export default Galery;
