@@ -35,6 +35,17 @@ const Navbar = ({ active, click }) => {
             <S.NavbarMobileIcon onClick={handleClick}>
               {clicked ? <FaTimes /> : <FaBars />}
             </S.NavbarMobileIcon>
+            <S.NavbarMenu onClick={handleClick} click={clicked}>
+              <S.NavbarItem>
+                <S.NavbarLinks to="/">Home</S.NavbarLinks>
+              </S.NavbarItem>
+              <S.NavbarItem>
+                <S.NavbarLinks to="/galery">Gallery</S.NavbarLinks>
+              </S.NavbarItem>
+              <S.NavbarItem>
+                <S.NavbarLinks to="/destinations">Destinations</S.NavbarLinks>
+              </S.NavbarItem>
+            </S.NavbarMenu>
           </S.NavbarContainer>
         </S.Navbar>
       </IconContext.Provider>

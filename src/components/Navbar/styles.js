@@ -55,3 +55,51 @@ export const NavbarMobileIcon = styled.div`
     cursor: pointer;
   }
 `;
+
+export const NavbarMenu = styled.ul `
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+
+  @media (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: ${({click}) => (click ? "100%"  : "-1000px")};
+    opacity: 1;
+    transition: all 0.2s ease;
+    background: #fff;
+  }
+`;
+
+export const NavbarItem = styled.li`
+  height: 80px;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+export const NavbarLinks = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+
+  @media (max-width: 960px) {
+    display: table;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+
+    &:hover {
+      color: #ff4040;
+      transition: all 0.3s ease;
+    }
+  }
+`;
